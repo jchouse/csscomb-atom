@@ -1,15 +1,17 @@
 {
   "name": "atom-css-comb",
   "main": "./lib/css-comb",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "CSScomb is a coding style formatter for CSS. You can easily write your own configuration to make your style sheets beautiful and consistent.",
-  "activationEvents": ["css-comb:comb"],
+  "activationEvents": [
+    "css-comb:comb"
+  ],
   "repository": "https://github.com/jchouse/csscomb-atom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
   "dependencies": {
-      "csscomb": "^2.0.4"
+    "csscomb": "^2.0.4"
   }
 }
