@@ -1,7 +1,12 @@
-{View} = require 'atom'
 Comb = require 'csscomb'
+{File} = require 'pathwatcher'
 
 module.exports =
+    userConfig: ->
+        console.log File
+        # configPath = atom.packages.getLoadedPackage('atom-css-comb').path + '/configs/user.coffee'
+        # atom.workspace.open(configPath)
+
     config: ->
         configSet = atom.config.get 'css-comb.config'
 
@@ -12,6 +17,7 @@ module.exports =
 
     activate: () ->
         atom.workspaceView.command "css-comb:comb", => @comb()
+        atom.workspaceView.command "css-comb:userConfig", => @userConfig()
 
     comb: ->
           filePath = atom.workspace.activePaneItem.getPath()
