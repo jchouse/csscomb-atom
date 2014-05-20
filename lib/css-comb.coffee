@@ -1,11 +1,16 @@
 Comb = require 'csscomb'
 {File} = require 'pathwatcher'
+# file = new File()
 
 module.exports =
     userConfig: ->
-        console.log File
-        # configPath = atom.packages.getLoadedPackage('atom-css-comb').path + '/configs/user.coffee'
-        # atom.workspace.open(configPath)
+        path = atom.project.path + '/config.csscomb.js'
+        file = new File(path)
+        file.read().then () => @putNewConfigs(file, path)
+
+    putNewConfigs: (file, path) ->
+        file.write('test')
+        atom.workspace.open(path)
 
     config: ->
         configSet = atom.config.get 'css-comb.config'
