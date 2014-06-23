@@ -19,6 +19,6 @@ After this in your `config.cson` will be added to the following construction
 'css-comb':
     'userConfig': true
 ```
-A `config` option higher priority than `userConfig`
+A `config` option higher priority than `userConfig`. Remove the 'config' if you want to use 'userConfig'.
 ## How to use
 Open any file and press `ctrl+alt+c`, or use context menu.
