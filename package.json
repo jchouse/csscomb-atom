@@ -7,13 +7,27 @@
     "css-comb:comb",
     "css-comb:userSettings"
   ],
-  "repository": "https://github.com/jchouse/csscomb-atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jchouse/csscomb-atom"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
   "dependencies": {
-    "csscomb": "^2.0.4",
-    "pathwatcher": "^1.2.3"
-  }
+    "csscomb": "^3.0.0"
+  },
+  "readme": "# Csscomb package\nCSScomb is a coding style formatter for CSS.\n\nBased on [csscombjs](https://github.com/csscomb/csscomb.js)\n\n## Configure\n### Default settings\nSet below code to your config file.\n```js\n'css-comb':\n    'config': 'config_name'\n```\n`yandex` is the default setting.  If you want to use it don't write anything down.\nAlready have [configs](https://github.com/csscomb/csscomb.js/tree/master/config) (`yandex`, `zen`, `csscomb`), or you can use your own.\n### User settings\nYou can generate your own config. To do this in the module menu, select `User config` (Packages -> Css Comb -> User config). For more information about [settings](https://github.com/csscomb/csscomb.js/blob/master/doc/options.md). After that in you\nAfter this in your `config.cson` will be added to the following construction\n```js\n'css-comb':\n    'userConfig': true\n```\nA `config` option higher priority than `userConfig`. Remove the 'config' if you want to use 'userConfig'.\n## How to use\nOpen any file and press `ctrl+alt+c`, or use context menu.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jchouse/csscomb-atom/issues"
+  },
+  "homepage": "https://github.com/jchouse/csscomb-atom",
+  "_id": "atom-css-comb@0.2.3",
+  "dist": {
+    "shasum": "7ec104ae355cdb03c8f8e38ca03f8c52fc3dc0bb"
+  },
+  "_resolved": "/var/folders/l8/nxwftfg50v193tjvbqw4tkq00000gp/T/d-11469-6444-1g8nsp8/package.tgz",
+  "_from": "/var/folders/l8/nxwftfg50v193tjvbqw4tkq00000gp/T/d-11469-6444-1g8nsp8/package.tgz"
 }

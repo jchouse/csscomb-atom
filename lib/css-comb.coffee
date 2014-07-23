@@ -1,5 +1,4 @@
 Comb = require 'csscomb'
-{File} = require 'pathwatcher'
 
 module.exports =
     userSettings: ->
