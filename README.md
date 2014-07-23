@@ -1,7 +1,7 @@
 # Csscomb package
 CSScomb is a coding style formatter for CSS.
 
-Based on [csscombjs](https://github.com/csscomb/csscomb.js)
+Based on [csscombjs 3.0](https://github.com/csscomb/csscomb.js)
 
 ## Configure
 ### Default settings
