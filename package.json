@@ -24,10 +24,10 @@
     "url": "https://github.com/jchouse/csscomb-atom/issues"
   },
   "homepage": "https://github.com/jchouse/csscomb-atom",
-  "_id": "atom-css-comb@0.2.3",
+  "_id": "atom-css-comb@0.3.2",
   "dist": {
-    "shasum": "7ec104ae355cdb03c8f8e38ca03f8c52fc3dc0bb"
+    "shasum": "15e8030e750f61c98d28795c004965f38f16c55a"
   },
-  "_resolved": "/var/folders/l8/nxwftfg50v193tjvbqw4tkq00000gp/T/d-11469-6444-1g8nsp8/package.tgz",
-  "_from": "/var/folders/l8/nxwftfg50v193tjvbqw4tkq00000gp/T/d-11469-6444-1g8nsp8/package.tgz"
+  "_resolved": "/var/folders/l8/nxwftfg50v193tjvbqw4tkq00000gp/T/d-11477-67042-fezad1/package.tgz",
+  "_from": "/var/folders/l8/nxwftfg50v193tjvbqw4tkq00000gp/T/d-11477-67042-fezad1/package.tgz"
 }

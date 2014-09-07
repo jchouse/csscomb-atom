@@ -10,7 +10,7 @@
       'label': 'Css Comb'
       'submenu': [
         { 'label': 'Comb', 'command': 'css-comb:comb' }
-        { 'label': 'Project settings', 'command': 'css-comb:userSettings' }
+        { 'label': 'Settings', 'command': 'css-comb:userSettings' }
       ]
     ]
   }
