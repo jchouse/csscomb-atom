@@ -25,6 +25,12 @@ class CssCombView extends View
                             type: 'radio'
                             name: 'csscomb'
                             value: 'zen'
+                @div class: 'css-comb__row', =>
+                    @tag 'label', 'alphabetize', =>
+                        @tag 'input',
+                            type: 'radio'
+                            name: 'csscomb'
+                            value: 'alphabetize'
             @h3 'Own preferences'
             @div class: 'css-comb__block', =>
                 @div class: 'css-comb__row', =>
