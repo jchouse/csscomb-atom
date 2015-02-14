@@ -4,8 +4,8 @@ module.exports =
 class CssCombView extends View
     @content: ->
         @div class: 'css-comb overlay from-top', =>
-            @h2 'CSS Comb settings:'
-            @h3 'Ready-made preferences'
+            @h2 'CSS Comb configs:'
+            @h3 'Ready-made configs'
             @div class: 'css-comb__block', =>
                 @div class: 'css-comb__row', =>
                     @tag 'label', 'yandex', =>
@@ -25,7 +25,7 @@ class CssCombView extends View
                             type: 'radio'
                             name: 'csscomb'
                             value: 'zen'
-            @h3 'Own preferences'
+            @h3 'Own configs'
             @div class: 'css-comb__block', =>
                 @div class: 'css-comb__row', =>
                     @tag 'label', 'custom config', =>
@@ -33,12 +33,12 @@ class CssCombView extends View
                             type: 'radio'
                             name: 'csscomb'
                             value: 'custom'
-                    @button class: "btn btn-sg css-comb-config disabled", 'Edit config file'
+                    @button class: 'btn btn-sg css-comb-config disabled', 'Edit config file'
             @div class: 'css-comb__row css-comb__row_aright', =>
                 @button class: "btn btn-lg css-comb-close", 'Close'
 
     initialize: (serializeState) ->
-        atom.workspaceView.command "css-comb:userSettings", => @toggle()
+        atom.commands.add 'atom-workspace', 'css-comb:userSettings': => @toggle()
 
     # Returns an object that can be retrieved when package is activated
     serialize: ->
@@ -51,7 +51,7 @@ class CssCombView extends View
         if @hasParent()
             @detach()
         else
-            atom.workspaceView.append(this)
+            $(atom.views.getView(atom.workspace)).append(this)
             @setActions()
 
     setActions: ->

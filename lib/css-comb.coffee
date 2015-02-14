@@ -16,7 +16,7 @@ module.exports =
             'yandex'
 
     activate: (state) ->
-        atom.workspaceView.command "css-comb:comb", => @comb()
+        atom.commands.add 'atom-workspace', 'css-comb:comb': => @comb()
         @cssCombView = new CssCombView(state.cssCombViewState)
 
     deactivate: ->
