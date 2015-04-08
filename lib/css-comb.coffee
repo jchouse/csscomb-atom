@@ -23,7 +23,7 @@ module.exports =
         @cssCombView.destroy()
 
     comb: ->
-        filePath = atom.workspace.activePaneItem.getPath()
+        filePath = atom.workspace.getActivePaneItem().getPath()
         comb = new Comb @config()
         comb.processPath(filePath)
 
