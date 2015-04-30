@@ -9,11 +9,9 @@ module.exports =
         cssCombPackage = atom.packages.getLoadedPackage 'atom-css-comb'
 
         if configSet != 'custom'
-            configSet
+            configSet || 'yandex'
         else if configSet == 'custom'
             require cssCombPackage.path + '/configs/.csscomb.json'
-        else
-            'yandex'
 
     activate: (state) ->
         atom.commands.add 'atom-workspace', 'css-comb:comb': => @comb()
