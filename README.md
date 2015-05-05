@@ -13,3 +13,6 @@ To open setting menu use `Packages`->`Css Comb`->`Settings`
 
 ## How to use
 Open any file and press `ctrl+alt+c`, or use context menu.
+
+## Contributors
+Haojia Che [1989car](https://github.com/1989car)
