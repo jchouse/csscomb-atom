@@ -1,7 +1,6 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.overlayer':
-      'Css Comb': 'css-comb:comb'
+  '.overlayer': [{  'Css Comb': 'css-comb:comb'  }]
 
 'menu': [
   {
