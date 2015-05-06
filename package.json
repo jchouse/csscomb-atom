@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": ">0.196.0"
+    "atom": ">=0.196.0"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.0.3",
