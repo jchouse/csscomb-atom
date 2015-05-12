@@ -25,15 +25,23 @@ class CssCombView extends View
                             type: 'radio'
                             name: 'csscomb'
                             value: 'zen'
-            @h3 'Own configs'
+            @h3 'Common config'
             @div class: 'css-comb__block', =>
                 @div class: 'css-comb__row', =>
                     @tag 'label', 'custom config', =>
                         @tag 'input',
                             type: 'radio'
                             name: 'csscomb'
-                            value: 'custom'
+                            value: 'common'
                     @button class: 'btn btn-sg css-comb-config disabled', 'Edit config file'
+            @h3 'Project config'
+            @div class: 'css-comb__block', =>
+                @div class: 'css-comb__row', =>
+                    @tag 'label', 'use project config', =>
+                        @tag 'input',
+                            type: 'radio'
+                            name: 'csscomb'
+                            value: 'project'
             @div class: 'css-comb__row css-comb__row_aright', =>
                 @button class: "btn btn-lg css-comb-close", 'Close'
 
@@ -62,7 +70,7 @@ class CssCombView extends View
         $(':radio', @).change (e) =>
             value = $(e.target).val() != config
             atom.config.set 'css-comb.config', $(e.target).val() if value
-            if $('input[value=custom]:radio', @).prop 'checked'
+            if $('input[value=common]:radio', @).prop 'checked'
                 $('.css-comb-config', @).removeClass 'disabled'
             else
                 $('.css-comb-config', @).addClass 'disabled'
