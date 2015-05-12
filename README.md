@@ -6,7 +6,7 @@ CSScomb is a coding style formatter for CSS.
 Based on [csscombjs 3.0](https://github.com/csscomb/csscomb.js)
 
 ## Configure
-Can use [ready-made presets](https://github.com/csscomb/csscomb.js/tree/master/config) or customize [your own](https://github.com/csscomb/csscomb.js/blob/master/doc/options.md).
+Can use [ready-made presets](https://github.com/csscomb/csscomb.js/tree/master/config), [customize](http://csscomb.com/config) your own common or project config.
 To open setting menu use `Packages`->`Css Comb`->`Settings`
 
 ![settings](https://raw.githubusercontent.com/jchouse/csscomb-atom/master/i/settings.png)
