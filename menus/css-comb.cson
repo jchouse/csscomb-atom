@@ -1,16 +1,18 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.overlayer': [{  'Css Comb': 'css-comb:comb'  }]
+    '.atom-workspace': [
+        { 'type' : 'separator' }
+        { 'label' : 'Css Comb', 'command': 'css-comb:comb'}
+      ]
 
 'menu': [
-  {
-    'label': 'Packages'
-    'submenu': [
-      'label': 'Css Comb'
-      'submenu': [
-        { 'label': 'Comb', 'command': 'css-comb:comb' }
-        { 'label': 'Settings', 'command': 'css-comb:userSettings' }
-      ]
-    ]
-  }
+    {
+        'label': 'Packages'
+        'submenu': [
+            'label': 'Css Comb'
+            'submenu': [
+                { 'label': 'Comb', 'command': 'css-comb:comb' }
+            ]
+        ]
+    }
 ]
