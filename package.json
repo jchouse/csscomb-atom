@@ -1,29 +1,29 @@
 {
-    "name": "atom-css-comb",
-    "main": "./lib/css-comb",
-    "version": "2.0.1",
-    "description": "CSScomb is a coding style formatter for CSS (LESS|SASS|etc). You can easily write your own configuration to make your style sheets beautiful and consistent.",
-    "activationCommands": {
+  "name": "atom-css-comb",
+  "main": "./lib/css-comb",
+  "version": "2.1.0",
+  "description": "CSScomb is a coding style formatter for CSS (LESS|SASS|etc). You can easily write your own configuration to make your style sheets beautiful and consistent.",
+  "activationCommands": {
     "atom-text-editor": [
-        "css-comb:comb",
-        "css-comb:userSettings"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jchouse/csscomb-atom"
-    },
-    "license": "MIT",
-    "engines": {
-        "atom": ">=0.196.0"
-    },
-    "dependencies": {
-        "atom-space-pen-views": "2.0.3",
-        "csscomb": "3.1.8"
-    },
-    "devDependencies": {},
-    "bugs": {
-        "url": "https://github.com/jchouse/csscomb-atom/issues"
-    },
-    "homepage": "https://github.com/jchouse/csscomb-atom"
+      "css-comb:comb",
+      "css-comb:userSettings"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jchouse/csscomb-atom"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.196.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "2.0.3",
+    "csscomb": "3.1.8"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/jchouse/csscomb-atom/issues"
+  },
+  "homepage": "https://github.com/jchouse/csscomb-atom"
 }
