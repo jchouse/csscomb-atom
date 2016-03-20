@@ -1,9 +1,8 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-    '.atom-workspace': [
-        { 'type' : 'separator' }
+    'atom-text-editor': [
         { 'label' : 'Css Comb', 'command': 'css-comb:comb'}
-      ]
+    ]
 
 'menu': [
     {
